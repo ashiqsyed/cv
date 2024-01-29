@@ -1,0 +1,303 @@
+/*
+Google fonts used: 
+Anton - https://fonts.google.com/specimen/Anton?preview.text=Ashiq%20Syed
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+Caveat - https://fonts.google.com/specimen/Caveat?preview.text=Hello!
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+*/
+
+
+
+/* getting rid of margin around the whole page */
+body {
+    margin: 0;
+}
+
+/* Header/Navbar */
+nav {
+    background-color: #86B6F6;
+    height: 3.125em;
+    display: flex;
+    justify-content: flex-end;
+    /* border: 1px solid black; */
+    padding: 15px 15px;
+    align-items: center;
+    font-family: 'Gruppo', sans-serif;
+    /* margin: 0; */
+}
+
+nav a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #B4D4FF;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    text-shadow: 1.25px 1.25px black;
+    
+}
+
+/* Footer */
+footer {
+    background-color: #176B87;
+    /* background-color: white; */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    align-items: center;
+    font-family: 'Gruppo', sans-serif;
+}
+
+footer a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #B4D4FF;
+    transition: 0.2s;
+}
+
+footer a:hover {
+    text-shadow: 1.25px 1.25px black;
+
+}
+
+/* Page Body */
+.title {
+    background-size: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    color: #B4D4FF;
+    height: 20em;
+    width: 100%;
+    font-size: 2rem;
+
+    font-family: 'Anton', sans-serif;
+    text-shadow: 2px 2px white;
+}
+
+/* image of boston, one of the images we need to absolutely place */
+.boston {
+    position: absolute;
+    width: 100%;
+    /* height: 320px; */
+    z-index: -1;
+    height: 20em;
+}
+
+.cat1 {
+    position: absolute;
+    width: 75px;
+    border-radius: 100%;
+    z-index: 1;
+    left: 5px;
+    top: 600px;
+}
+
+.info {
+    width: 100%;
+    height: 70em;
+    background-color: #EEF5FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #B4D4FF;
+    text-align: center;
+    font-family: 'Gruppo', sans-serif;
+    /* font-family:  */
+}
+
+.info h2 {
+    font-size: 2.25rem;
+    color: rgb(28, 94, 144);
+    font-family: 'Caveat', cursive;
+}
+
+.info p {
+    font-size: 1.5rem;
+    color: #B4D4FF;
+}
+
+#me {
+    border-radius: 100%;
+    width: 15em;
+    height: 15em;
+}
+
+/* cards */
+.card {
+    border: 1px solid black;
+    height: 475px;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 3px 3px black;
+    text-align: left;
+    transition: 0.25s;
+}
+
+.card h3 {
+    font-size: 28px;
+    color: black;
+}
+
+
+.card:hover {
+    box-shadow: 4px 4px 4px 4px black;
+}
+
+.card ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.card dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.card dt {
+    font-size: 24px;
+}
+
+.card dd {
+    font-size: 20px;
+}
+
+.card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    /* justify-content: space-around; */
+}
+
+hr {
+    border-top: 5px dotted black;
+    width: 100%;
+    border-bottom: none;
+    border-color: #B4D4FF;
+    border-left: none;
+    border-right: none;
+}
+
+/* contact information */
+.information {
+    background-color: #EEF5FF;
+    width: 100%;
+    height: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #B4D4FF;
+    font-family: 'Gruppo', sans-serif;
+}
+
+.information h1 {
+    font-size: 3em;
+    font-family: 'Caveat', cursive;
+    
+}
+
+.information p {
+    font-size: 1.25em;
+}
+
+/* contact form */
+.one-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+    height: 35em;
+    background-color: #EEF5FF;
+    font-family: 'Gruppo', sans-serif;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 25px;
+    gap: 10px;
+    align-content: center;
+    height: 80%;
+    text-align: center;
+}
+
+#msg_form {
+    width: 50%;
+    height: 80%;
+}
+
+form input[type="text"], form input[type="email"] {
+    height: 45%;
+    transition: 0.25s;
+}
+
+form input[type="text"]:focus, form input[type="email"]:focus, textarea:focus {
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+textarea {
+    height: 100%; 
+    transition: 0.25s;
+}
+
+form label {
+    font-size: 1.5em;
+}
+
+form input[type="submit"] {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 75%;
+    background-color: #176B87;
+    color: #B4D4FF;
+    transition: 0.25s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #B4D4FF;
+    color: #176B87;
+    box-shadow: 3px 3px 3px 3px black;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1120px) {
+    .title {
+        height: 20em;
+    }
+
+    .info {
+        height: 145em;
+    }
+
+    .three-col {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+}

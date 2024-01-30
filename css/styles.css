@@ -1,13 +1,3 @@
-/*
-Google fonts used: 
-Anton - https://fonts.google.com/specimen/Anton?preview.text=Ashiq%20Syed
-        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-Caveat - https://fonts.google.com/specimen/Caveat?preview.text=Hello!
-        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-*/
-
-
-
 /* getting rid of margin around the whole page */
 body {
     margin: 0;
@@ -64,39 +54,30 @@ footer a:hover {
 
 /* Page Body */
 .title {
-    background-size: 100%;
-
+    background-size: 100% 100%;
+    background-image: url("../images/Pic1.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-
+    background-repeat: no-repeat;
     color: #B4D4FF;
-    height: 20em;
+    height: 25em;
     width: 100%;
     font-size: 2rem;
-
     font-family: 'Anton', sans-serif;
     text-shadow: 2px 2px white;
 }
 
-/* image of boston, one of the images we need to absolutely place */
-.boston {
-    position: absolute;
-    width: 100%;
-    /* height: 320px; */
-    z-index: -1;
-    height: 20em;
-}
-
+/* cat image on bottom left */
 .cat1 {
     position: absolute;
     width: 125px;
     border-radius: 100%;
     z-index: 1;
     left: 35px;
-    top: 500px;
+    top: 650px;
     animation-name: cat_spinning;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -104,6 +85,7 @@ footer a:hover {
     animation-timing-function: ease-in-out;
 }
 
+/* cat image on top left */
 .cat2 {
     position: absolute;
     width: 155px;
@@ -111,11 +93,9 @@ footer a:hover {
     z-index: 1;
     left: 35px;
     top: 125px;
-    /* right: 500px; */
     animation-name: cat_spinning;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    /* animation-direction: alternate; */
     animation-timing-function: ease-in-out;
 }
 
@@ -132,6 +112,8 @@ footer a:hover {
 .info {
     width: 100%;
     height: 70em;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #EEF5FF;
     display: flex;
     flex-direction: column;
@@ -154,6 +136,7 @@ footer a:hover {
     color: #B4D4FF;
 }
 
+/* picture of me */
 #me {
     border-radius: 100%;
     width: 15em;
@@ -169,6 +152,7 @@ footer a:hover {
     box-shadow: 3px 3px black;
     text-align: left;
     transition: 0.25s;
+
 }
 
 .card h3 {
@@ -204,6 +188,18 @@ footer a:hover {
 
 .card dd {
     font-size: 20px;
+    
+}
+
+#kumon {
+    text-decoration: none;
+    transition: 0.2s;
+    color: rgb(82, 198, 209);
+}
+
+#kumon:hover {
+    text-shadow: 2px 2px black;
+    
 }
 
 .card img {
@@ -281,6 +277,7 @@ form {
 form input[type="text"], form input[type="email"] {
     height: 45%;
     transition: 0.25s;
+    border-radius: 5px;
 }
 
 form input[type="text"]:focus, form input[type="email"]:focus, textarea:focus {
@@ -290,6 +287,7 @@ form input[type="text"]:focus, form input[type="email"]:focus, textarea:focus {
 textarea {
     height: 100%; 
     transition: 0.25s;
+    border-radius: 3px;
 }
 
 form label {
@@ -316,6 +314,7 @@ form input[type="submit"]:hover {
 @media screen and (max-width: 1120px) {
     .title {
         height: 20em;
+        
     }
 
     .info {

@@ -92,11 +92,41 @@ footer a:hover {
 
 .cat1 {
     position: absolute;
-    width: 75px;
+    width: 125px;
     border-radius: 100%;
     z-index: 1;
-    left: 5px;
-    top: 600px;
+    left: 35px;
+    top: 500px;
+    animation-name: cat_spinning;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+}
+
+.cat2 {
+    position: absolute;
+    width: 155px;
+    border-radius: 100%;
+    z-index: 1;
+    left: 35px;
+    top: 125px;
+    /* right: 500px; */
+    animation-name: cat_spinning;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    animation-timing-function: ease-in-out;
+}
+
+/* cat image animation */
+@keyframes cat_spinning {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .info {
@@ -299,5 +329,15 @@ form input[type="submit"]:hover {
 
     form {
         grid-template-columns: 1fr;
+    }
+
+    .cat1 {
+        width: 75px;
+        top: 550px;
+    }
+
+    .cat2 {
+        width: 80px;
+        top: 150px;
     }
 }
